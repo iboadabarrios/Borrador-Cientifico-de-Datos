@@ -46,6 +46,47 @@ Idiomas que habla: Español · Euskera · Inglés
 # *Proyecto BlaBlacar*
 
 </div>
+***El proyecto: un planificador de trayectos para BlaBlaCar
+
+### Problema inicial
+En el reto **Data Visualization** del Cajamar UniversityHack 2020, Ander y su compañero Alex Seoane recibieron todos los trayectos hechos en BlaBlaCar durante dos años en toda la península ibérica: **más de 11 millones de datos** que había que transformar en una visualización útil para la empresa.
+
+Para BlaBlaCar, aumentar su valor se traduce sobre todo en **más viajes**. Tras un análisis descriptivo vieron que no todos los trayectos tienen la misma oferta ni se cubren de la misma manera: quizás Bilbao–Cádiz es poco probable, pero Bilbao–Madrid y Madrid–Cádiz sí lo son.
+
+### Cuestiones involucradas
+- Aplicación interactiva
+- Modelo de optimización
+- Cloud
+
+### Solución
+Crear un **planificador de trayectos** que, dados un origen, un destino y una fecha, indique la probabilidad de que exista oferta de asientos y, si el trayecto directo es poco probable, proponga una **ruta alternativa** corta y probable, como las escalas en los vuelos. Además, construyeron las herramientas necesarias para llevar este nuevo servicio al mercado de la mejor manera posible.
+
+<div align="center">
+
+<img src="planificador_blablacar.png" alt="Planificador de trayectos de BlaBlaCar" width="700">
+
+*Ejemplo: Bilbao → Alicante el 3 de julio de 2020. El trayecto directo tiene un 32 % de probabilidad de oferta (820 km); la ruta alternativa vía Valencia, un 99 % (807 km: 653 + 154).*
+
+</div>
+
+### ¿Cómo funciona?
+- **Probabilidad por día de la semana:** calcularon la probabilidad de cada trayecto según el día, porque no es lo mismo viajar un viernes que un lunes.
+- **Ruta alternativa:** usaron el **algoritmo de Dijkstra** sobre un grafo de ciudades, ponderando probabilidad y distancia: es mejor una ruta algo menos probable pero mucho más corta que otra más probable pero inviable para el usuario.
+- **Herramientas:** R, Shiny, Leaflet, grafos y JavaScript.
+
+### Los tres ejes del proyecto
+<details>
+  <summary> Llegar más lejos </summary>
+  Permitir que los usuarios lleguen a más sitios mediante rutas alternativas cuando la ruta directa es poco probable.
+</details>
+<details>
+  <summary> Llegar a más gente </summary>
+  Dashboard por provincias con mapa interactivo y minigráficos, para conocer la penetración de BlaBlaCar y su ratio de confirmación de asientos en cada zona.
+</details>
+<details>
+  <summary> Cuidando el planeta </summary>
+  Estimación del ahorro ambiental de BlaBlaCar en cada provincia, a partir de los asientos confirmados, la distancia de cada viaje y la contaminación media por kilómetro de los coches matriculados en Europa.
+</details>
 
 ## ¿Que es BlaBlacar? 
 
