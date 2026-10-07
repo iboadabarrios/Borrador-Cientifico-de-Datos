@@ -11,7 +11,7 @@ Este repositorio presenta a ***Ander Fernández***, Senior Data Scientist en DEC
 
 Aquí encontrarás:
 1. **Su perfil profesional**, extraído de su blog y su LinkedIn personal.
-2. **Un proyecto suyo**, con su descripción y resultados. El proyecto que explicaremos fue ganador del **Cajamar UniversityHack 2020** y trató sobre la empresa ***BlaBlaCar*, trabajo en el cuál debían utilizar 11 millones de datos que debían transformar en una visualización con valor para el negocio.
+2. **Un proyecto suyo**, con su descripción y resultados. El proyecto que explicaremos fue ganador del **Cajamar UniversityHack 2020** y trató sobre la empresa ***BlaBlaCar***: 11 millones de datos que debían transformarse en una visualización con valor para el negocio.
 
 > Fuentes: [anderfernandez.com](https://anderfernandez.com) y su perfil de [LinkedIn](https://www.linkedin.com/in/ander-fernandez/?isSelfProfile)
 
@@ -35,7 +35,7 @@ Ander es una persona apasionada por los datos, con más de 6 años de experienci
 ## Trayectoria
 - **Profesor** del posgrado en Big Data de la Universidad de Deusto (2020–2023): modelos supervisados, ETL en producción, modelado de datos, integración de datos y cómo convertir datos en valor de negocio.
 - **Data Scientist** en LIN3S (2019–2021): modelos en producción, análisis avanzado, A/B tests, ETL y dashboards.
-- **Ganador** del Cajamar UniversityHack 2020 con el caso BlaBlaCar, el proyecto que explicamos en este repositorio.
+- **Ganador** del Cajamar UniversityHack 2020 con el caso BlaBlaCar, el proyecto que se explicara en este repositorio.
 - **Máster en Big Data & Business Intelligence** y **Grado en ADE**, Universidad de Deusto.
 
 Idiomas que habla: Español · Euskera · Inglés
@@ -96,11 +96,19 @@ El año cerró con 50 millones de pasajeros frente a unos 70 millones en 2019, l
 | Varianza| -30%|
 |Actividad mantenida| mas del 70% en comparacion al año anterior|
 
-Los mercados fuera de Europa, como Brasil, México, India y Ucrania, tuvieron menos restricciones más flexibles lo que conllevo a que, la crisis acelerara la compra de pasajes de autobús en línea en países como Rusia e India, donde antes la mayoría se compraba en la estación.
+<img src="gif_stonks.gif" align="right" width="300" alt="Stonks">
 
-<div align="center">
+Los mercados fuera de Europa, como Brasil, México, India y Ucrania, tuvieron
+restricciones más flexibles, lo que llevó a que la crisis acelerara
+la compra de pasajes de autobús
+en línea en países como Rusia e India, donde antes la mayoría se compraba en la estación.
 
-![Gif_1](gif_stonks.gif)
+<br clear="right">
 
-</div>
+## ***Enseñanza para un cientifico de datos***
 
+Este trabajo realizado por un cientifico resulta bastante pertinente debido a que, las nuevas generaciones no se confien en que sus modelos de machine learning van a funcinoar siempre, de un momento a otro pueden terminar obsoletos y tambien a no basarnos en los datos sin saber su contexto anterior del por qué estos cambiaron de esa forma.
+
+- [x] Segmentar antes de concluir: la caída de 70 a 50 millones de pasajeros oculta casos muy distintos, como el 1–2 % de actividad en marzo frente al +15 % del verano, o Europa frente a Brasil e India.
+- [x] Los modelos de demanda entrenados con datos de 2015–2019 quedaron obsoletos en semanas. La pandemia fue un cambio de régimen, no un dato atípico para eliminar, así que hay que monitorear y reentrenar.
+ 
