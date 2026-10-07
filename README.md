@@ -43,7 +43,7 @@ Idiomas que habla: Español · Euskera · Inglés
 ---
 <div align="center">
   
-# *Proyecto BlaBlacar*
+# *Proyecto BlaBlaCar*
 
 </div>
 
@@ -52,12 +52,13 @@ Idiomas que habla: Español · Euskera · Inglés
 ### Problema inicial
 En el reto **Data Visualization** del Cajamar UniversityHack 2020, Ander y su compañero Alex Seoane recibieron todos los trayectos hechos en BlaBlaCar durante dos años en toda la península ibérica: **más de 11 millones de datos** que había que transformar en una visualización útil para la empresa.
 
-Para BlaBlaCar, aumentar su valor se traduce sobre todo en **más viajes**. Tras un análisis descriptivo vieron que no todos los trayectos tienen la misma oferta ni se cubren de la misma manera: quizás Bilbao–Cádiz es poco probable, pero Bilbao–Madrid y Madrid–Cádiz sí lo son.
+Para BlaBlaCar, uno de los retos era ampliar las posibilidades de uso de su red. Una de las principales limitaciones identificadas era que los usuarios no podían saber con suficiente anticipación si existiría oferta hacia determinados destinos: quizás Bilbao–Cádiz es poco probable, pero Bilbao–Madrid y Madrid–Cádiz sí lo son.
 
-### Cuestiones involucradas
-- Aplicación interactiva
-- Modelo de optimización
-- Cloud
+### Componentes del proyecto
+- **Aplicación interactiva:** permitió consultar las rutas y visualizar los resultados de manera accesible.
+- **Teoría de grafos y algoritmo de Dijkstra:** permitieron buscar rutas alternativas cuando no existía una opción directa suficientemente probable.
+- **Modelo de predicción de oferta:** permitió estimar la probabilidad de encontrar plazas disponibles según el trayecto y el día.
+- **Visualización de datos:** permitió representar información sobre penetración del servicio y ahorro ambiental por provincia.
 
 ### Solución
 Crear un **planificador de trayectos** que, dados un origen, un destino y una fecha, indique la probabilidad de que exista oferta de asientos y, si el trayecto directo es poco probable, proponga una **ruta alternativa** corta y probable, como las escalas en los vuelos. Además, construyeron las herramientas necesarias para llevar este nuevo servicio al mercado de la mejor manera posible.
@@ -89,12 +90,13 @@ Crear un **planificador de trayectos** que, dados un origen, un destino y una fe
   Estimación del ahorro ambiental de BlaBlaCar en cada provincia, a partir de los asientos confirmados, la distancia de cada viaje y la contaminación media por kilómetro de los coches matriculados en Europa.
 </details>
 
-## ¿Que es BlaBlacar? 
+## ¿Qué es BlaBlaCar? 
 
 BlaBlaCar es una plataforma de viajes compartidos que conecta a conductores con asientos libres y a pasajeros que van hacia el mismo destino. Fue fundada en 2006 en Francia por Frédéric Mazzella, Nicolas Brusson y Francis Nappez, y en 2020 estaba dirigida por Brusson, cofundador y CEO desde 2016.
-Su modelo es asset-light: la empresa no tiene vehículos ni conductores propios, sino que funciona como un marketplace comunitario. Con el tiempo pasó de ser solo una aplicación de carpooling (funciona como una aplicacion de viaje en carro como Uber pero compartido con mas usuarios) a ofrecer una propuesta multimodal, con BlaBlaBus para los viajes en autobús y BlaBlaLines para los trayectos cortos del día a día.
+Su modelo es asset-light: la empresa no tiene vehículos ni conductores propios, sino que funciona como un marketplace comunitario. Con el tiempo pasó de ser solo una aplicación de carpooling a ofrecer una propuesta multimodal, con BlaBlaBus para los viajes en autobús y BlaBlaLines para los trayectos cortos del día a día.
+Su modelo se basa en una plataforma de movilidad compartida que conecta a conductores con pasajeros que realizan trayectos similares. A diferencia de un servicio tradicional de transporte, BlaBlaCar funciona como un marketplace en el que los usuarios ofrecen o buscan plazas disponibles en viajes ya planificados.
 
-### Proposito
+### Propósito
 <img src="blablacar.jpg" align="right" width="300" alt="Stonks">
 
 <details>
@@ -103,7 +105,7 @@ Su modelo es asset-light: la empresa no tiene vehículos ni conductores propios,
 </details>
 <details>
   <summary> Conexión </summary>
-   conectar a personas que van al mismo destino, con perfiles y valoraciones para generar confianza y de ahi sale el nombre viene de que los usuarios podían elegir cuánto les gustaba conversar durante el viaje ("bla", "blabla", "blablabla").
+   conectar a personas que realizan trayectos similares mediante perfiles y valoraciones que ayudan a generar confianza entre los usuarios que podían elegir cuánto les gustaba conversar durante el viaje. ("bla", "blabla", "blablabla").
 </details>
 <details>
   <summary> Sostenibilidad </summary>
@@ -128,14 +130,14 @@ El panorama fue desigual según el país: Rusia e India prohibieron el carpoolin
 
 </details>
 <details>
-<summary> Su reaccion ante la situacion </summary>
+<summary> Su reacción ante la situacion </summary>
 BlaBlaCar reaccionó rápido desde el inicio de la crisis: recortó costos, protegió a su equipo y se mantuvo en contacto con su comunidad. Durante el primer confinamiento lanzó además BlaBlaHelp, una aplicación gratuita de ayuda entre vecinos que permitía ofrecerse como voluntario o encontrar personas de confianza para hacer compras de primera necesidad o recoger medicamentos.
 La compañía también apostó por la confianza de los usuarios, aplicando protocolos sanitarios y destacando que el carpooling reduce el número de contactos entre personas en comparación con otros medios de transporte.
 
 </details>
 
 <details>
-<summary> Recuperacion </summary>
+<summary> Recuperación </summary>
 En abril, Brusson preparaba a sus equipos para una reanudación muy lenta, de entre 12 y 18 meses, pero desde fines de junio la demanda de pasajeros volvió con fuerza. En agosto, las solicitudes en Francia superaban en un 15 % las del verano anterior, ayudadas por las vacaciones dentro del país y por la menor oferta de trenes, autobuses y aviones. La oferta de conductores volvió algo más despacio que la demanda.
 Fuera de Europa el golpe fue menor. Brasil, Mexico, India y Ucrania tuvieron restricciones menos estrictas, y en países como Rusia e India la crisis empujó la compra de pasajes de autobús en línea. Con todo, el segundo trimestre se dio por perdido y el segundo confinamiento volvió a frenar el impulso: BlaBlaBus se detuvo el 1 de noviembre y no regresaría hasta la primavera, así que la empresa volcó sus esfuerzos en el carpooling para cerrar el año.
 
@@ -149,8 +151,8 @@ El año cerró con 50 millones de pasajeros frente a unos 70 millones en 2019, l
 |---------|---------|
 | Pasajeros 2019| 70 millones|
 | Pasajeros 2020 | 50 millones|
-| Varianza| -30%|
-|Actividad mantenida| mas del 70% en comparacion al año anterior|
+| Disminución de pasajeros| 28.6%|
+|Actividad mantenida| Más del 70% en comparación al año anterior|
 
 <img src="gif_stonks.gif" align="right" width="300" alt="Stonks">
 
@@ -161,9 +163,19 @@ en línea en países como Rusia e India, donde antes la mayoría se compraba en 
 
 <br clear="right">
 
-## ***Enseñanza para un cientifico de datos***
+## ***Enseñanza para un científico de datos***
 
-Este trabajo realizado por un cientifico resulta bastante pertinente debido a que, las nuevas generaciones no se confien en que sus modelos de machine learning van a funcinoar siempre, de un momento a otro pueden terminar obsoletos y tambien a no basarnos en los datos sin saber su contexto anterior del por qué estos cambiaron de esa forma.
+Este proyecto muestra que un científico de datos no debe asumir que los patrones encontrados en datos históricos se mantienen cuando cambia el contexto. La pandemia modificó de manera drástica el comportamiento de los usuarios y, por lo tanto, una conclusión basada únicamente en los datos de años anteriores podría dejar de representar la situación real. Por esta razón, es importante segmentar los datos por periodo y contexto, monitorear cambios en el comportamiento y actualizar los modelos cuando las condiciones del problema cambien.
 
-- [x] Segmentar antes de concluir: la caída de 70 a 50 millones de pasajeros oculta casos muy distintos, como el 1–2 % de actividad en marzo frente al +15 % del verano, o Europa frente a Brasil e India.
-- [x] Los modelos de demanda entrenados con datos de 2015–2019 quedaron obsoletos en semanas. La pandemia fue un cambio de régimen, no un dato atípico para eliminar, así que hay que monitorear y reentrenar.
+- [x] **Segmentar antes de concluir:** la caída de 70 a 50 millones de pasajeros oculta casos muy distintos, como el 1–2 % de actividad en marzo frente al +15 % del verano, o Europa frente a Brasil e India.
+- [x] **Monitorear y actualizar los modelos:** cuando cambia significativamente el contexto, los datos históricos pueden dejar de representar el comportamiento actual. En estos casos es necesario evaluar nuevamente el modelo y, si es necesario, reentrenarlo.
+
+## Fuentes
+
+1. Fernández, A. (s. f.). *Proyecto ganador UniversityHack 2020 BlaBlaCar*. Ander Fernández. https://anderfernandez.com/proyecto/universityhack-2020-blablacar-llegando-mas-lejos/
+
+2. Fernández, A. (s. f.). *Proyectos de Data Science*. Ander Fernández. https://anderfernandez.com/proyectos-de-data-science/
+
+3. Universidad de Deusto. (2020). *El equipo Datmen de Deusto, ganador de Cajamar UniversityHack 2020*. https://www.deusto.eus/
+
+4. BlaBlaCar. (2020, 18 de diciembre). *BlaBlaCar withstands the crisis with 50 million passengers in 2020*. https://blog.blablacar.com/newsroom/news-list/blablacar-withstands-the-crisis-with-50-million-passengers-in-2020
