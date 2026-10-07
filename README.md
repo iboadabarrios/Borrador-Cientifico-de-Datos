@@ -23,7 +23,7 @@ Ander es una persona apasionada por los datos, con más de 6 años de experienci
 
 <div align="center">
 
-![Foto_Ander](ander_fernandez.jpg)
+<img src="ander_fernandez.jpg" alt="Foto de Ander" width="250">
 
 </div>
 
