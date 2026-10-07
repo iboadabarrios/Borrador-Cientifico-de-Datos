@@ -46,7 +46,8 @@ Idiomas que habla: Español · Euskera · Inglés
 # *Proyecto BlaBlacar*
 
 </div>
-***El proyecto: un planificador de trayectos para BlaBlaCar
+
+***El proyecto: un planificador de trayectos para BlaBlaCar***
 
 ### Problema inicial
 En el reto **Data Visualization** del Cajamar UniversityHack 2020, Ander y su compañero Alex Seoane recibieron todos los trayectos hechos en BlaBlaCar durante dos años en toda la península ibérica: **más de 11 millones de datos** que había que transformar en una visualización útil para la empresa.
@@ -65,7 +66,7 @@ Crear un **planificador de trayectos** que, dados un origen, un destino y una fe
 
 <img src="planificador_blablacar.png" alt="Planificador de trayectos de BlaBlaCar" width="700">
 
-*Ejemplo: Bilbao → Alicante el 3 de julio de 2020. El trayecto directo tiene un 32 % de probabilidad de oferta (820 km); la ruta alternativa vía Valencia, un 99 % (807 km: 653 + 154).*
+> Imagen extraída del blog de Ander Fernandez
 
 </div>
 
