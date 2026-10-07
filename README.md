@@ -52,11 +52,25 @@ Idiomas que habla: Español · Euskera · Inglés
 BlaBlaCar es una plataforma de viajes compartidos que conecta a conductores con asientos libres y a pasajeros que van hacia el mismo destino. Fue fundada en 2006 en Francia por Frédéric Mazzella, Nicolas Brusson y Francis Nappez, y en 2020 estaba dirigida por Brusson, cofundador y CEO desde 2016.
 Su modelo es asset-light: la empresa no tiene vehículos ni conductores propios, sino que funciona como un marketplace comunitario. Con el tiempo pasó de ser solo una aplicación de carpooling (funciona como una aplicacion de viaje en carro como Uber pero compartido con mas usuarios) a ofrecer una propuesta multimodal, con BlaBlaBus para los viajes en autobús y BlaBlaLines para los trayectos cortos del día a día.
 
-<div align="center">
+### Proposito
+<img src="blablacar.jpg" align="right" width="300" alt="Stonks">
 
-![Ima_1](blablacar.jpg).
+<details>
+  <summary> Ahorro </summary>
+   los pasajeros pagan menos que en tren o autobús, y los conductores reparten los gastos del viaje.
+</details>
+<details>
+  <summary> Conexión </summary>
+   conectar a personas que van al mismo destino, con perfiles y valoraciones para generar confianza y de ahi sale el nombre viene de que los usuarios podían elegir cuánto les gustaba conversar durante el viaje ("bla", "blabla", "blablabla").
+</details>
+<details>
+  <summary> Sostenibilidad </summary>
+llenar los coches reduce el número de vehículos en la carretera y las emisiones por persona.
+</details>
 
-</div>
+<br clear="right">
+
+
 
 ## ***Momento del boom***
 <details>
@@ -111,4 +125,3 @@ Este trabajo realizado por un cientifico resulta bastante pertinente debido a qu
 
 - [x] Segmentar antes de concluir: la caída de 70 a 50 millones de pasajeros oculta casos muy distintos, como el 1–2 % de actividad en marzo frente al +15 % del verano, o Europa frente a Brasil e India.
 - [x] Los modelos de demanda entrenados con datos de 2015–2019 quedaron obsoletos en semanas. La pandemia fue un cambio de régimen, no un dato atípico para eliminar, así que hay que monitorear y reentrenar.
- 
